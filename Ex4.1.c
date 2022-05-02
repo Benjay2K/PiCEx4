@@ -7,7 +7,7 @@
  * Sign-extension: in case signed to longer type
  * Bit pattern reinterpretation: in case of signed <-> unsigned with same size
  *
- * char -> short (char unsigned, short signed, same length of 2 bytes; Bit pattern reinterpretation)
+ * char -> short (char unsigned, short signed, same length of 2 bytes; Sign-extension)
  * short -> long (signed to longer type; Sign-extension)
  *
  * char -> unsigned char (both consist of an area of 8 bits; Bit pattern reinterpretation)

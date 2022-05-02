@@ -9,7 +9,7 @@ int main(){
         size_t n = 1000000;
         const unsigned target = 10001;  //our target is the 10001st prime number
 
-        sieve = calloc(n, sizeof *sieve);
+        sieve = calloc(n, sizeof *sieve);   //allocate array
         for(i = 2; i < n; i++){                     //i should equal the first prime number 2
             if(!sieve[i]){                          //find the first i greater than j that is not marked in our list
                 size_t j;                           //if there is such a number set j to that number
